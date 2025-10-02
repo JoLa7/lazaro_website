@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Research | Joshua Lazaro</title>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+  <header class="site-header">
+    <canvas id="header-canvas" aria-hidden="true"></canvas>
+
+    <div class="logo-text">
+      <img src="assets/icons/jelazaro_logo.png" alt="Logo" class="site-logo">
+      <div class="site-title">
+        <div class="name">Joshua Lazaro</div>
+        <div class="subtitle">PhD Student at Stanford</div>
+      </div>
+    </div>
+
+    <nav class="nav-pill">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a aria-current="page" href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="news.html">Media</a></li>
+        <li class="has-dropdown">
+          <a href="fun.html" aria-haspopup="true" aria-expanded="false">For Fun ▾</a>
+          <ul class="dropdown" role="menu">
+            <li role="none"><a role="menuitem" href="fun.html#teaching-mentorship">Teaching & Mentorship</a></li>
+            <li role="none"><a role="menuitem" href="fun.html#civil-engineering">Civil Engineering</a></li>
+            <li role="none"><a role="menuitem" href="fun.html#outdoors">Outdoors</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  
+
+  <main>
+    <h1 class="page-title">Selected Research:</h1>
+
+    <section class="research-list">
+      <!-- Item 1 (text left, image right) -->
+      <article class="research-item">
+        <div class="research-text">
+          <h2 class="research-title">Probabilistic Forecasting of West Nile Virus</h2>
+          <p class="research-desc">
+            We build calibrated, probabilistic forecasts of county-level West Nile Virus risk by combining
+            geospatial, surveillance, demographic, and rare case data outperforming classical baseline models.
+            
+            🏆 1st Place at the California Department of Public Health Forecasting Challenge
+          </p>
+          <p class="research-link">
+            Paper: 🚧Coming Soon!🚧
+          </p>
+        </div>
+        <figure class="research-media">
+          <img src="assets/images/josh_conference.jpg" alt="Josh Conference Poster" />
+        </figure>
+      </article>
+
+      <!-- Item 2 (image left, text right) -->
+      <article class="research-item">
+        <figure class="research-media">
+          <img src="assets/images/Second Signal Final Presentation.jpg" alt="LLM Paper" />
+        </figure>
+        <div class="research-text">
+          <h2 class="research-title">Leveraging Large Language Models for Adaptive Mental Health Training</h2>
+          <p class="research-desc">
+            AI-powered chat copilots are emerging as valuable tools to support less-experienced counselors and 
+            expand care in underserved regions. However, they risk fostering overreliance and acceptance of flawed 
+            suggestions, potentially leading to harmful crisis responses. Partnering with an India-based crisis 
+            hotline, our team developed and benchmarked synthetic LLM-driven patient agents and deployed an AI 
+            copilot in live clinical workflows, enabling evaluation of new training paradigms with expert counselor
+            feedback for real-time improvement.
+          </p>
+          <p class="research-link">
+            <a href="https://drive.google.com/file/d/1m3iC-_BxLtpSMqH-FBCgeWZFV02vexKL/view?usp=sharing" target="_blank" rel="noopener">Preliminary Class Results</a>
+          </p>
+        </div>
+      </article>
+
+      <!-- Item 3 (text left, image right) -->
+      <article class="research-item">
+        <div class="research-text">
+          <h2 class="research-title">ML Probabilistic Weather Forecasting</h2>
+          <p class="research-desc">
+            We developed a probabilistic temperature forecasting framework to improve West Nile Virus risk 
+            assessments in California. Using historical climate data and machine learning models, including XGBoost 
+            Distribution, Bayesian neural networks, and Gaussian Processes, we generated full probability 
+            distributions of monthly temperatures using Stochastic & Monte Carlo Simulations, enabling uncertainty quantification.
+          </p>
+          <p class="research-link">
+            <a href="https://drive.google.com/file/d/1aea1ce4lmsYRHuZTwWa6CSZsP2fHMAz3/view?usp=sharing" target="_blank" rel="noopener">Preliminary Class Result</a>
+          </p>
+        </div>
+        <figure class="research-media">
+          <img src="assets/images/cs_229.jpg" alt="CS 229 Project Presentation" />
+        </figure>
+      </article>
+
+
+      <article class="research-item">
+        <div class="research-text">
+          <h2 class="research-title">Colorectal Cancer Gene Effect Sizes</h2>
+          <p class="research-desc">
+            This study re-analyzes 46 colorectal cancer–associated genes identified by Zhao et al. using whole 
+            exome sequencing from 1,015 patients, moving beyond mutation frequency to quantify each gene’s 
+            selective advantage in tumor growth. By applying our Cancer Effect Size R toolkit, we identified and 
+            prioritized high-effect genes and variants for therapeutic targeting. This effect size–based approach
+            offers a more accurate framework for drug development, potentially saving millions in research costs 
+            compared to frequency-only methods.
+          </p>
+          <p class="research-link">
+            Yale AMGEN Scholar Presentation: <a href="https://photos.app.goo.gl/nKhs5NS8zmQVAz6S8" target="_blank" rel="noopener">Video</a>
+          </p>
+        </div>
+        <figure class="research-media">
+          <img src="assets/images/amgen.png" alt="CS 229 Project Presentation" />
+        </figure>
+      </article>
+
+      <section class="research-list">
+        <!-- Item 1 (text left, image right) -->
+        <article class="research-item">
+          <div class="research-text">
+            <h2 class="research-title">Differential disease trajectories between children in Low and Middle Income Countries</h2>
+            <p class="research-desc">
+                In summer 2021, I joined Dr. Nima Aghaeepour’s lab at Stanford to apply machine learning to 
+                multi-omic data—integrating genomics, proteomics, metabolomics, and transcriptomics—to study 
+                rural–urban health differences in children. I developed high-accuracy models (AUC = 0.92) that 
+                classified rural vs. urban backgrounds and identified key biological and socioeconomic markers 
+                linked to health outcomes. This work demonstrated how harmonizing diverse biological data with 
+                statistical modeling can inform interventions and improve child health in varying socioeconomic
+                contexts.
+            </p>
+            <p class="research-link">
+            <a href="https://drive.google.com/file/d/1-oeXGja6ZVXZYBD7Mux1gRAqQ3v9eKu8/view?usp=sharing" target="_blank", rel="noopener">Stanford Symposium Presentation</a>
+            </p>
+          </div>
+          <figure class="research-media">
+            <img src="assets/images/SSRP.jpg" alt="Josh Presentation" />
+          </figure>
+        </article>
+
+
+      
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Joshua Lazaro</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

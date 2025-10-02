@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects | Joshua Lazaro</title>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+  <header class="site-header">
+    <canvas id="header-canvas" aria-hidden="true"></canvas>
+
+    <div class="logo-text">
+      <img src="assets/icons/jelazaro_logo.png" alt="Logo" class="site-logo">
+      <div class="site-title">
+        <div class="name">Joshua Lazaro</div>
+        <div class="subtitle">PhD Student at Stanford</div>
+      </div>
+    </div>
+
+    <nav class="nav-pill">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a aria-current="page" href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="news.html">Media</a></li>
+        <li class="has-dropdown">
+          <a href="fun.html" aria-haspopup="true" aria-expanded="false">For Fun ▾</a>
+          <ul class="dropdown" role="menu">
+            <li role="none"><a role="menuitem" href="fun.html#teaching-mentorship">Teaching & Mentorship</a></li>
+            <li role="none"><a role="menuitem" href="fun.html#civil-engineering">Civil Engineering</a></li>
+            <li role="none"><a role="menuitem" href="fun.html#outdoors">Outdoors</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1 class="page-title">Projects & Hackathons</h1>
+    <p class="news-intro">A selection of coding projects and hackathon entries.</p>
+
+    <section class="project-list">
+
+        <article class="project-card">
+            <figure class="project-media">
+              <img src="assets/projects/nsa_rowdydatathon.jpg" alt="NSA RowdyDatathon project thumbnail">
+            </figure>
+          
+            <div class="project-text">
+              <div class="project-head">
+                <h2 class="project-title">Trajectories of Born Infants in the United States</h2>
+                <span class="badge badge-silver">2nd Place — Advanced Track</span>
+              </div>
+          
+              <div class="project-subtitle">National Security Agency (NSA) RowdyDatathon</div>
+          
+              <p class="project-summary">
+                Built neural network & time-series models on a harmonized national birth dataset to
+                study socioeconomic drivers of low birthweight and newborn mortality.
+                Processed ~15 GB of longitudinal data and produced calibrated forecasts.
+              </p>
+          
+              <ul class="tech-list">
+                <li class="tech">PyTorch</li>
+                <li class="tech">Python</li>
+                <li class="tech">Pandas</li>
+                <li class="tech">Time-series</li>
+                <li class="tech">Deep Learning</li>
+              </ul>
+          
+              <p class="project-links">
+                <a class="btn tiny" href="https://devpost.com/software/trajectories-of-born-infants-in-the-united-states" target="_blank" rel="noopener">Devpost</a>
+              </p>
+          
+              <details class="project-details">
+                <summary>More details</summary>
+                <ul>
+                  <li>Investigated socioeconomic factors influencing low birthweight and newborn mortality (1960–2010).</li>
+                  <li>Manipulated, adapted, and harmonized ~15 GB of data for neural networks and forecasting.</li>
+                </ul>
+              </details>
+            </div>
+          </article>
+          
+
+<!-- HackUNT: Hack Rover -->
+<article class="project-card">
+    <figure class="project-media">
+      <img src="assets/projects/hack_rover.jpg" alt="Hack Rover project thumbnail">
+    </figure>
+    <div class="project-text">
+      <div class="project-head">
+        <h2 class="project-title">Hack Rover: Remoteless CV Control with ASL</h2>
+        <span class="badge badge-bronze">3rd Place — General</span>
+        <span class="badge">Best Use of Google Cloud</span>
+      </div>
+      <div class="project-subtitle">HackUNT</div>
+      <p class="project-summary">
+        Prototyped a rover interface using computer vision to recognize ASL hand signs
+        as control signals—exploring inclusive interaction for space robotics.
+      </p>
+      <ul class="tech-list">
+        <li class="tech">Python</li><li class="tech">OpenCV</li><li class="tech">Google Cloud</li>
+        <li class="tech">Go</li><li class="tech">React</li><li class="tech">Raspberry Pi</li>
+      </ul>
+      <p class="project-links">
+        <a class="btn tiny" href="https://devpost.com/software/hack-rover-tech" target="_blank" rel="noopener">Devpost</a>
+      </p>
+      <details class="project-details">
+        <summary>More details</summary>
+        <ul>
+          <li>Built CV + ML pipeline to detect American Sign Language hand shapes as commands.</li>
+          <li>Integrated cloud APIs; designed control loop for rover motion.</li>
+        </ul>
+      </details>
+    </div>
+  </article>
+  
+  <!-- RowdyHack: Hydroponics -->
+  <article class="project-card">
+    <figure class="project-media">
+      <img src="assets/projects/rowdyhack2022.jpg" alt="Automated Hydroponic Garden thumbnail">
+    </figure>
+    <div class="project-text">
+      <div class="project-head">
+        <h2 class="project-title">Automated Hydroponic Garden (NFT)</h2>
+        <span class="badge badge-gold">1st Place — General</span>
+        <span class="badge badge-gold">1st Place — Hardware</span>
+      </div>
+      <div class="project-subtitle">RowdyHack</div>
+      <p class="project-summary">
+        End-to-end hydroponics automation with sensors, Arduinos, and ML for plant
+        health—live dashboard for pH, humidity, algae detection, and growth tracking.
+      </p>
+      <ul class="tech-list">
+        <li class="tech">Python</li><li class="tech">OpenCV</li><li class="tech">Raspberry Pi</li>
+        <li class="tech">R</li><li class="tech">CNNs</li><li class="tech">Image Segmentation</li>
+      </ul>
+      <p class="project-links">
+        <a class="btn tiny" href="https://devpost.com/software/nft-garden" target="_blank" rel="noopener">Devpost</a>
+      </p>
+      <details class="project-details">
+        <summary>More details</summary>
+        <ul>
+          <li>Automated sensing for algae, growth, pH, and humidity; website dashboard for live metrics.</li>
+          <li>Used CV (segmentation/edges) to estimate genus, growth, and height from images.</li>
+        </ul>
+      </details>
+    </div>
+  </article>
+  
+  <!-- TAMU Datathon 2021: Job Hunting After Incarceration -->
+  <article class="project-card">
+    <figure class="project-media">
+      <img src="assets/projects/tamu_datathon.png" alt="Job Hunting After Incarceration thumbnail">
+    </figure>
+    <div class="project-text">
+      <div class="project-head">
+        <h2 class="project-title">Job Hunting After Incarceration</h2>
+      </div>
+      <div class="project-subtitle">Texas A&amp;M Datathon</div>
+      <p class="project-summary">
+        Built a prototype job-scraping pipeline for blue-collar roles to support re-entry job search,
+        plus an early database design for user filtering.
+      </p>
+      <ul class="tech-list">
+        <li class="tech">Python</li><li class="tech">BeautifulSoup</li><li class="tech">HTML</li>
+      </ul>
+      <p class="project-links">
+        <a class="btn tiny" href="https://devpost.com/software/job-hunting-after-incarceration" target="_blank" rel="noopener">Devpost</a>
+      </p>
+      <details class="project-details">
+        <summary>More details</summary>
+        <ul>
+          <li>Scraped job listings; began DB schema for search and retrieval.</li>
+          <li>Resolved local runtime/file-path issues; built minimal front-end connectivity.</li>
+        </ul>
+      </details>
+    </div>
+  </article>
+  
+  <!-- RowdyHacks 2021: RowdyMon -->
+  <article class="project-card">
+    <figure class="project-media">
+      <img src="assets/projects/rowdy_mon.png" alt="RowdyMon retro game thumbnail">
+    </figure>
+    <div class="project-text">
+      <div class="project-head">
+        <h2 class="project-title">RowdyMon — Retro Game</h2>
+      </div>
+      <div class="project-subtitle">RowdyHacks</div>
+      <p class="project-summary">
+        A UTSA-inspired retro RPG; implemented sprite animation, battle logic, and UI
+        while learning C++ and ROM tooling.
+      </p>
+      <ul class="tech-list">
+        <li class="tech">C++</li><li class="tech">HTML5</li><li class="tech">ROM Utilities</li>
+        <li class="tech">Assembly (fundamentals)</li>
+      </ul>
+      <p class="project-links">
+        <a class="btn tiny" href="https://devpost.com/software/rowdymon" target="_blank" rel="noopener">Devpost</a>
+        <a class="btn tiny" href="https://rowdymon.netlify.app/" target="_blank" rel="noopener">Demo</a>
+      </p>
+      <details class="project-details">
+        <summary>More details</summary>
+        <ul>
+          <li>Developed character battle scenes and command UI.</li>
+          <li>Started a React leaderboard service (servers/APIs) concept.</li>
+        </ul>
+      </details>
+    </div>
+  </article>
+  
+  <!-- TAMU Datathon 2020: City Search with GIS -->
+  <article class="project-card">
+    <figure class="project-media">
+      <img src="assets/projects/dashboard.png" alt="City Search GIS dashboard thumbnail">
+    </figure>
+    <div class="project-text">
+      <div class="project-head">
+        <h2 class="project-title">City Search — GIS Dashboard</h2>
+      </div>
+      <div class="project-subtitle">TAMU Datathon</div>
+      <p class="project-summary">
+        Built a GIS dashboard for exploring US cities; transformed spatial coordinates and
+        engineered categorical city features for user exploration.
+      </p>
+      <ul class="tech-list">
+        <li class="tech">ArcGIS (Esri)</li><li class="tech">Python</li><li class="tech">Pandas</li>
+        <li class="tech">Kaggle</li><li class="tech">Excel</li><li class="tech">GIS</li>
+      </ul>
+      <p class="project-links">
+        <a class="btn tiny" href="https://devpost.com/software/city-search-x-gis" target="_blank" rel="noopener">Devpost</a>
+        <a class="btn tiny" href="https://utsa.maps.arcgis.com/apps/dashboards/7646f38674334d9dbe49d289c4ed23d5" target="_blank" rel="noopener">Demo</a>
+      </p>
+      <details class="project-details">
+        <summary>More details</summary>
+        <ul>
+          <li>Converted spatial coordinates; standardized for US audiences.</li>
+          <li>Researched and added categorical features to enrich city profiles.</li>
+        </ul>
+      </details>
+    </div>
+  </article>
+  
+  <!-- UNT Make-a-Thon: CAMP headrest -->
+  <article class="project-card">
+    <figure class="project-media">
+      <img src="assets/projects/camp.png" alt="CAMP headrest mockup thumbnail">
+    </figure>
+    <div class="project-text">
+      <div class="project-head">
+        <h2 class="project-title">CAMP — Cranial Automobile Mechanical Protection</h2>
+        <span class="badge badge-silver">2nd Place — Advanced Track</span>
+      </div>
+      <div class="project-subtitle">Biomedical Make-A-Thon (UNT)</div>
+      <p class="project-summary">
+        Designed a safety headrest concept to mitigate TBIs in crashes; evaluated sensor
+        activation success using ROC/AUC and built basic business analysis for scaling.
+      </p>
+      <ul class="tech-list">
+        <li class="tech">Signal Detection</li><li class="tech">ROC/AUC</li><li class="tech">Prototyping</li>
+      </ul>
+      <p class="project-links">
+        <a class="btn tiny" href="https://drive.google.com/file/d/17YbuVwLkcuWR7gORQxqgQOJCrAuKWhau/view?usp=sharing" target="_blank" rel="noopener">Video Presentation</a>
+      </p>
+      <details class="project-details">
+        <summary>More details</summary>
+        <ul>
+          <li>Explored applications for EV safety and manufacturability.</li>
+        </ul>
+      </details>
+    </div>
+  </article>
+  
+
+  <footer>
+    <p>&copy; 2025 Joshua Lazaro</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
