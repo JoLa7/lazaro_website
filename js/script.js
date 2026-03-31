@@ -161,4 +161,37 @@
   });
   
 
-  
+  // ===== Mobile hamburger =====
+document.addEventListener('DOMContentLoaded', function () {
+  // Inject the hamburger button into every header that has a nav-pill
+  const headers = document.querySelectorAll('header.site-header');
+
+  headers.forEach(header => {
+    const nav = header.querySelector('.nav-pill');
+    if (!nav) return;
+
+    const btn = document.createElement('button');
+    btn.className = 'hamburger';
+    btn.setAttribute('aria-label', 'Toggle navigation');
+    btn.setAttribute('aria-expanded', 'false');
+    btn.innerHTML = '<span></span><span></span><span></span>';
+
+    // Insert button just before the nav pill
+    header.insertBefore(btn, nav);
+
+    btn.addEventListener('click', () => {
+      const isOpen = nav.classList.toggle('open');
+      btn.classList.toggle('open', isOpen);
+      btn.setAttribute('aria-expanded', String(isOpen));
+    });
+
+    // Close menu when a link is clicked
+    nav.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        nav.classList.remove('open');
+        btn.classList.remove('open');
+        btn.setAttribute('aria-expanded', 'false');
+      });
+    });
+  });
+});
