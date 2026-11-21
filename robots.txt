@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jola7.github.io/lazaro_website/sitemap.xml

@@ -43,7 +43,7 @@
     z-index: 1;
   }
   .site-logo { height: 50px; width: auto; }
-  .site-title .name { font-size: 1.4rem; font-weight: 700; color: var(--text-on-brand); }
+  .site-title .name { margin: 0; line-height: inherit; font-size: 1.4rem; font-weight: 700; color: var(--text-on-brand); }
   .site-title .subtitle { font-size: 0.9rem; color: rgba(255,255,255,0.8); }
   
   .nav-pill {
@@ -310,12 +310,35 @@
   max-width: 60ch;
 }
 
-.research-link a {
+/* Shared "this is a link" button style: research + project links */
+.research-link a,
+.project-links a.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
+  padding: 0.45em 1em;
+  border: 2px solid var(--brand-cardinal);
+  border-radius: 9999px;
   color: var(--brand-cardinal);
   font-weight: 700;
   text-decoration: none;
+  transition: background-color 0.15s ease, color 0.15s ease;
 }
-.research-link a:hover { text-decoration: underline; }
+.project-links a.btn { background: transparent; font-size: 0.9rem; padding: 0.4em 0.95em; }
+.research-link a::after,
+.project-links a.btn::after,
+.contact-actions a[target="_blank"]::after,
+.doc-row a::after { content: "↗"; font-weight: 400; margin-left: 0.35em; }
+.research-link a::after,
+.project-links a.btn::after { margin-left: 0; }
+.research-link a:hover,
+.research-link a:focus-visible,
+.project-links a.btn:hover,
+.project-links a.btn:focus-visible,
+.btn.outline:hover,
+.btn.outline:focus-visible { background: var(--brand-cardinal); color: #fff; }
+.contact-actions .btn:not(.primary):hover,
+.contact-actions .btn:not(.primary):focus-visible { border-color: var(--brand-cardinal); color: var(--brand-cardinal); }
 
 /* Media box: fixed aspect for tidy rows; image fully responsive */
 .research-media {
@@ -522,14 +545,29 @@
   border: 1px solid rgba(0,0,0,0.08);
   border-radius: 12px;
   background: #fafafa;
+  position: relative;          /* lets the link cover the whole row */
+  transition: border-color 0.15s ease, background-color 0.15s ease;
+}
+.news-item:hover,
+.news-item:focus-within {
+  border-color: var(--brand-cardinal);
+  background: #fff;
 }
 
 .news-item a {
   font-weight: 700;
-  color: #111;
+  color: var(--brand-cardinal);
   text-decoration: none;
 }
-.news-item a:hover { text-decoration: underline; }
+.news-item a::after { content: " ↗"; font-weight: 400; }
+/* invisible overlay so the entire row is clickable */
+.news-item a::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+}
+.news-item:hover a { text-decoration: underline; }
 
 .news-source {
   margin-left: auto;
